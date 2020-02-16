@@ -14,3 +14,37 @@
 # 거스름돈(1원 동전 개수)을 계산한다. 
 
 # 출력
+
+
+x=int(input("물건값을 입력하시오."))
+a=int(input("천원권 매수를 입력하시오."))
+b=int(input("500원자리 동전 갯수를 입력하시오"))
+c=int(input("100원짜리 동전 갯수를 입력하시오"))
+
+total = 1000*a   #250
+total1= 500*b
+total2= 100*c
+total3=total+total1+total2
+total4=total3-x
+print("거스름돈", total4)
+
+if total4 >=1000:
+    print("천원짜리 받는갯수", total4 // 1000)
+    total4=total4-(total4 % 1000)
+    print(total4-(total4 % 1000))
+
+if  500 <= total4 <1000:
+    print("오백원짜리 받는갯수", total4 // 500)
+    total4=total4 -(total4 % 500)
+    print(total4)
+    
+if 100<= total4 < 500:
+    print("백원짜리 받는갯수", total4 // 100)
+
+#print("천원짜리 받는갯수", total4 // 1000)
+#print("500원짜리 받는갯수", total4 //500)
+#print("100원짜리 받는갯수", total4// 100)
+
+
+
+
