@@ -27,3 +27,29 @@ prov = "A barking Dog"
 
 
 # 첫번째 b 문자를 찾고 출력하시오.
+
+prov = "A barking Dog"
+print(len(prov))
+
+prov2 = "never Bites!"
+prov3 = prov + prov2
+print(prov3)
+
+s09 = "abcde"
+s10 = "abcde"
+
+if s09 == s10:
+    print("same")
+else:
+    print("not same")
+
+
+bar=prov[2:5]
+print(bar)
+dog=prov[10:13]
+print(dog)
+
+idx=prov.find("Dog")
+if idx !=-1 :
+    dog=prov[idx:idx+3]
+    print(dog)

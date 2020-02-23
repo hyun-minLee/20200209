@@ -7,7 +7,6 @@ a=number
 b=number*2
 c=number*4
 
-
 print("치킨의수",a)
 print("맥주의 갯수",b)
 print("케익의 갯수",c)
