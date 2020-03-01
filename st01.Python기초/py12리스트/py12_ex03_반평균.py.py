@@ -17,7 +17,7 @@ while num:
     i=i+1
 if num<3:
         print("학생수는 3명이상이여야합니다.")
-        break;
+        break;FF
 
 print(student)
     
