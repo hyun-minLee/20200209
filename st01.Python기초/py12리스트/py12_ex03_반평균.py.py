@@ -7,3 +7,18 @@
 # 6. list에서 마지막 학생 삭제.
 # 7. list에서 0번 값을 출력하시오.
 # 8. 평균을 구하고 출력.
+
+student = []
+num=int(input("학생수를 입력하시오"))
+i=0
+while num:
+    y=input("성적을 입력하시오")
+    student.append(y)
+    i=i+1
+if num<3:
+        print("학생수는 3명이상이여야합니다.")
+        break;
+
+print(student)
+    
+

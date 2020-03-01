@@ -1,22 +1,25 @@
-# -*- coding: utf-8 -*-
-
-
-# 도전 2. 형변환. 문자열을 정수로 바꾸기.
-# 문자열 "3"을 정수 3으로 바꾸시오. 구글 검색
-# temp2 = "3"
-
-# 도전 3. 문자열에서 가장 큰 수를 찾으시오.
-# a. 문자열 자르기 --> 리스트를 얻게 됨.
-# b. 문자열을 정수 리스트로 만든다.
-# c. 정수리스트를 오름차순 정렬하시오
-# d. 정수리스트에서 최대값을 찾는다.
 temp3 = "74 874 9883 73 9 73646 774"
-array1 = temp3.strip().split(" ")
-print(array1)  # ['74', '874', '9883', '73', '9', '73646', '774']
 
-array2 = []
-for n in array1:
-    n = int(n)
-    array2.append(n)
 
-print(array2)  # [74, 874, 9883, 73, 9, 73646, 774]
+temp2 = []
+temp2=temp3.split()
+temp4 = ""
+
+for x in range(0, len(temp2), 1):
+    temp2[x] = int(temp2[x])
+
+print(temp2)
+temp2=sorted(temp2)
+print(temp2)
+
+sum=0
+for x in range(0, len(temp2),1):
+    sum=sum+temp2[x]
+
+print(sum)
+
+avg=sum/len(temp2)
+print(avg)
+max=max(temp2)
+print(max)
+

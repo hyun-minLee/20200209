@@ -49,7 +49,10 @@ print(bar)
 dog=prov[10:13]
 print(dog)
 
+
+#prov = "A barking Dog"
 idx=prov.find("Dog")
+print(idx)
 if idx !=-1 :
     dog=prov[idx:idx+3]
     print(dog)
